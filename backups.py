@@ -15,7 +15,6 @@ import ZeusXRobot.modules.sql.blacklist_sql as blacklistsql
 import ZeusXRobot.modules.sql.locks_sql as locksql
 import ZeusXRobot.modules.sql.notes_sql as sql
 
-import ZeusXRobot.modules.sql.rules_sql as rulessql
 from ZeusXRobot import JOIN_LOGGER, LOGGER, OWNER_ID, dispatcher
 from ZeusXRobot.__main__ import DATA_IMPORT
 from ZeusXRobot.modules.connection import connected
@@ -371,15 +370,15 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "Backups"
+__mod_name__ = "💌Backups"
 
 __help__ = """
 *Only for group owner:*
 
- ✪ `/import`: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \
- Note that files / photos cannot be imported due to telegram restrictions.
+ ✪ /import: Reply to the backup file for the butler emilia group to import as much as possible, making transfers very easy! 
+ Note that files photos cannot be imported due to telegram restrictions.
 
- ✪ `/export`: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
+ ✪ /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
 
 """
 
